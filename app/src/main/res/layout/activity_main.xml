@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#FAFAFA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/albumArt"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Album Art"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/songTitle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:text="0:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="200dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:text="0:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back10Button"
+            android:src="@android:drawable/ic_media_rew"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:contentDescription="Back 10s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/prevButton"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:contentDescription="Previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:src="@android:drawable/ic_media_play"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:contentDescription="Play/Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:src="@android:drawable/ic_media_next"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:contentDescription="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/forward10Button"
+            android:src="@android:drawable/ic_media_ff"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:contentDescription="Forward 10s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
