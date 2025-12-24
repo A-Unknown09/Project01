@@ -3,16 +3,15 @@ package com.example.wordguessinggame;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "names")
-public class NameEntity {
-
+@Entity(tableName = "words")
+public class Word {
     @PrimaryKey(autoGenerate = true)
     public int id;
 
-    public String name;
+    public String word;
 
-    public NameEntity(String name) {
-        this.name = name;
+    public Word(String word) {
+        this.word = word;
     }
 }
 

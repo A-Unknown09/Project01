@@ -1,44 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#5783bf">
-    <!-- شمارنده -->
+    android:layout_height="match_parent">
+
     <TextView
+        android:id="@+id/wordTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ببینم تا چندتا حوصلت میاد حدس بزنی "
-        android:background="@drawable/txt_style"
-        android:layout_margin="20dp"/>
-    <TextView
-        android:id="@+id/txtCounter"
-        android:text="1 / 1000"
-        android:textSize="14sp"
-        android:layout_marginBottom="8dp"
+        android:text="___"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/inputEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/txt_style"
-        android:gravity="center"/>
+        android:layout_below="@id/wordTextView"
+        android:hint="حدس بزنید"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
-    <!-- اسم حدسی -->
-    <TextView
-        android:id="@+id/txtGuess"
-        android:text="_ _ _"
-        android:textSize="32sp"
-        android:layout_marginBottom="32dp"
+    <Button
+        android:id="@+id/guessButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/txt_style"
-        android:layout_gravity="center" />
-
-    <!-- دکمه‌های حروف -->
-    <GridLayout
-        android:id="@+id/letterGrid"
-        android:columnCount="4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+        android:text="حدس زدن"
+        android:layout_below="@id/inputEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
